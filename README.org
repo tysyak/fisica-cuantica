@@ -1,0 +1,4 @@
+#+TITLE: Física Cuántica
+#+author: Cristian Romero Andrade
+
+Este repositorio se almacenan las tareas de física cuántica
