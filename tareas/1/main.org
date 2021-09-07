@@ -1,0 +1,78 @@
+#+TITLE: TM1
+#+AUTHOR: Cristian Romero Andrade, Chávez Magaña Manuel y Sánchez Bautista Alan Ulises
+#+options: title:nil toc:nil
+
+#+language: es
+
+#+latex_header: \include{main_config}
+
+
+#+latex: \input{../../portada.tex}
+
+
+* 1.1 Mecánica cuántica y vida real
+Generalmente la mecánica cuántica se le identifica una rama de la física
+sumamente difícil de entender, uno llega a imaginar a científicos e ingenieros
+creando máquinas sumamente gigantes para ver objetos indefinidamente pequeños.
+La mecánica cuántica llega a ser compleja, pero se inició con las preguntas más
+simples como ¿De qué color y por qué el color?
+
+La mecánica cuántica no solo se basa en responder las preguntas existenciales de
+los colores, sino para explicar la mayoría de las propiedades de los materiales.
+¿Por qué algunos materiales son duros y otros blandos?, ¿por qué hay materiales que
+reflejan luz?, ¿por qué hay materiales transparentes?, etc. de estas preguntas se
+encargan otras ciencias como la química, y ramas derivadas de la física; la visión
+de la mecánica cuántica se basa de aquellas ramas y de ellas esta comienza a
+ensamblarse.
+
+Si bien la mecánica cuántica, en materia, puede llegar a ser imprescindible para
+el desarrolló de varios artilugios que hoy en día usamos, sin embargo se usan teoría
+cuántica en la técnica para diseñar los dispositivos que ejecutan nuestras
+computadoras y conexiones a redes externas.
+
+Las ideas matemáticas de la informática y la información habían comenzado a tomar su
+forma moderna en las décadas de 1930, 1940 y 1950. En la década de 1950, los teléfonos
+y las comunicaciones por radio y televisión estaban bien establecidos, y se demostraron
+las primeras computadoras electrónicas primitivas. El transistor y el circuito integrado
+fueron los siguientes avances clave. Estos dispositivos hicieron que las computadoras
+complejas y la conmutación y el procesamiento de información fueran prácticos. Estos
+dispositivos se basaron en gran medida en la física mecánica cuántica de los materiales
+cristalinos. A medida que intentamos reducir los transistores a tamaños cada vez más
+pequeños, los efectos de la mecánica cuántica se vuelven progresivamente más
+importantes. Extrapolar ingenuamente la tendencia histórica en miniaturización
+conduciría a dispositivos del tamaño de moléculas pequeñas en las primeras décadas
+del siglo XXI (\cite[pp. 1--4]{miller2014}).
+
+
+* 1.2 La mecánica cuántica como logro intelectual
+
+* 1.3 Utilizando la mecánica cuántica
+En este punto el pobre estudiante tal vez esté cerca de rendirse en
+desesperación ¿cómo puede uno entender una teoría bizarra? y si uno
+puede entender esto ¿cómo puede uno usar estas cosas?, aquí están las
+buenas noticias: ya sea que nosotros entendamos cosas de mecánica
+cuántica o no, y ya sea si hay más cosas por descubrir sobre cómo
+trabajar con esto, la mecánica cuántica es sorprendentemente fácil de
+usar.
+
+La principal dificultad que tienen los estudiantes principiantes tiene
+que ver con saber que nociones de la mecánica clásica deben descartar, y
+qué nuevas nociones tienen que usar para reemplazarlas.
+
+El estudiante debe esperar pasar algún tiempo en incredulidad y
+conflicto,con lo que es acertado en la mecánica cuántica esto es
+enteramente normal.
+
+Nuestro uso de los principios de mecánica cuántica en aplicaciones
+tangibles tales como electrónicos o dispositivos ópticos y sistemas, la
+apariencia aparentemente bizarra puede convertirse en algo común y
+rutinario.
+
+Entender esto le da al estudiante la oportunidad para aplicar los
+conocimientos en el camino que otros no pueden comenzar a comprender
+(\cite[p.~1]{miller2014}).
+
+
+
+#+latex: \addcontentsline{toc}{section}{Referencias}
+#+latex: \printbibliography{}

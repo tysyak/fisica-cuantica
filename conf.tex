@@ -1,0 +1,67 @@
+\usepackage[margin=2.5cm,letterpaper]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+\usepackage[
+spanish,
+es-nodecimaldot,
+es-tabla
+%english
+]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{blindtext}
+\usepackage{multicol}
+
+\usepackage[default]{comfortaa}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{siunitx}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{E}}}
+
+\usepackage{minted}
+\usepackage{hyperref}
+
+\usepackage{xcolor}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{DarkGray}{HTML}{191919}
+\definecolor{custom}{HTML}{F8F8F8}
+
+\usepackage{caption}
+\usepackage{breqn}
+
+
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
+\usemintedstyle{default}
+
+\usepackage[ruled,vlined]{algorithm2e}
+
+\renewcommand{\listingscaption}{Código}
+\renewcommand\listoflistingscaption{Índice de \listingscaption\@s}
+
+\setminted[diff]{
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  bgcolor=LightGray,breaklines=true,
+  fontsize=\footnotesize
+}
+
+\setminted[bash]{
+  frame=single,
+  framesep=1mm,
+  baselinestretch=0.5,
+  breaklines=true,
+  bgcolor=custom,
+  fontsize=\scriptsize
+}
+
+\setminted[sql]{
+  frame=single,
+  framesep=1mm,
+  baselinestretch=0.5,
+  breaklines=true,
+  bgcolor=custom,
+  fontsize=\scriptsize
+}
