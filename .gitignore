@@ -1,0 +1,10 @@
+*.auctex-auto/
+*.bbl
+*.blg
+*.aux
+*.bcf
+*.log
+*.out
+*.pdf
+*.xml
+*.gz
