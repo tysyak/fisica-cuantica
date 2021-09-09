@@ -8,9 +8,9 @@
 
 
 #+latex: \input{../../portada.tex}
+#+latex: \renewcommand{\thesection}{1.\arabic{section}}
 
-
-* 1.1 Mecánica cuántica y vida real
+* Mecánica cuántica y vida real
 Generalmente la mecánica cuántica se le identifica una rama de la física
 sumamente difícil de entender, uno llega a imaginar a científicos e ingenieros
 creando máquinas sumamente gigantes para ver objetos indefinidamente pequeños.
@@ -44,9 +44,49 @@ conduciría a dispositivos del tamaño de moléculas pequeñas en las primeras d
 del siglo XXI (\cite[pp. 1--4]{miller2014}).
 
 
-* 1.2 La mecánica cuántica como logro intelectual
+* La mecánica cuántica como logro intelectual
+Todas las nuevas teorías científicas tienen que tener las mismas respuestas que todas las
+teorías anteriores, y a la vez explicar un fenómeno completamente nuevo para nosotros.
 
-* 1.3 Utilizando la mecánica cuántica
+Si utilizamos modelos que han trabajado bien anteriormente para explicar casos complejos
+como el comportamiento de un átomo, se pueden encontrar contradicciones y errores.
+Para poder resolver problemas que tengan que ver con luz y estructura de la materia, los
+modelos convencionales se quedan cortos, por lo que se tuvieron que crear nuevas reglas que
+desafían teorías anteriores y que pueden llegar a ser bastante bizarras.
+
+La mecánica cuántica es una ciencia tan nueva y abstracta que aún no la logramos comprender
+del todo. Podemos definir que una partícula siempre está en estado de superposición, esto
+implica que puede estar definitivamente a la derecha o a la izquierda, pero no es hasta que
+la medimos que sabemos su ubicación exacta, como si fuera un truco de magia, conocido como
+el colapso de la función de onda.
+
+Schrodinger explica la superposición a través de un ejemplo relativamente simple. Encierra
+a su gato en una caja con un mecanismo letal el cual solo se activa por el resultado, por
+ejemplo, de la degradación de un material radiactivo. No sabemos si el gato está vivo o
+muerto hasta que la caja sea abierta, lo que la mecánica cuántica sugiere es que el gato se
+encuentre en un estado de superposición entre la vida y la muerte.
+
+La mecánica cuántica nos permite predecir un promedio de la posición de un electrón y del
+tiempo de vida de un núcleo, pero no nos daría la posición exacta ni el tiempo.
+
+No podemos predecir el estado de las cosas, hay cierta aleatoriedad en nuestras vidas, la
+única forma que creemos que podemos predecir un sucesos es conociendo su posición inicial,
+sin embargo, esta información no es existente.
+
+Einstein creía que la mecánica cuántica estaba incompleta, que hacían falta variables
+escondidas que al ser descubiertas resolverían nuestros problemas de aleatoriedad.
+
+A pesar de lo absurdo, sin sentidos, y contradicciones de la mecánica cuántica, esta
+funciona, de hecho nunca se equivoca. Han habido mediciones sin experimentos y estas casi
+siempre son correctas a pesar de sus contradicciones. A pesar de ser tan inconvencional es
+tan exacta.
+
+ La historia de la mecánica cuántica está comenzando, aún falta por descubrir partículas
+ fundamentales y sus funciones en el universo. Muchos científicos siguen descubriendo usos
+ de la mecánica cuántica, como computadoras cuánticas y transmisión de información (\cite[pp.~4--6]{miller2014}).
+
+
+* Utilizando la mecánica cuántica
 En este punto el pobre estudiante tal vez esté cerca de rendirse en
 desesperación ¿cómo puede uno entender una teoría bizarra? y si uno
 puede entender esto ¿cómo puede uno usar estas cosas?, aquí están las
@@ -70,7 +110,7 @@ rutinario.
 
 Entender esto le da al estudiante la oportunidad para aplicar los
 conocimientos en el camino que otros no pueden comenzar a comprender
-(\cite[p.~1]{miller2014}).
+(\cite[pp.~6--8]{miller2014}).
 
 
 
