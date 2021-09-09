@@ -1,13 +1,11 @@
 #+TITLE: TM1
 #+AUTHOR: Cristian Romero Andrade, Chávez Magaña Manuel y Sánchez Bautista Alan Ulises
+#+language: es
 #+options: title:nil toc:nil
 
-#+language: es
+#+latex: \input{./portada.tex}
 
-#+latex_header: \include{main_config}
-
-
-#+latex: \input{../../portada.tex}
+# Númeración personalizada
 #+latex: \renewcommand{\thesection}{1.\arabic{section}}
 
 * Mecánica cuántica y vida real
@@ -111,8 +109,3 @@ rutinario.
 Entender esto le da al estudiante la oportunidad para aplicar los
 conocimientos en el camino que otros no pueden comenzar a comprender
 (\cite[pp.~6--8]{miller2014}).
-
-
-
-#+latex: \addcontentsline{toc}{section}{Referencias}
-#+latex: \printbibliography{}
