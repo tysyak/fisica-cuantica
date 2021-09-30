@@ -47,6 +47,13 @@ Obtener la información necesaria que le permita elaborar un modelo matemático 
    para estas actividades calculando la exactitud o el error de exactitud
    asociado con el experimento simulado.
 
+   Con esta práctica  hemos verificado la hipótesis de D'Broglie utilizando el modelo de
+    dispersión potencial. Utilizando los resultados obtenidos identificamos la constante
+    de la longitud de onda asociada con el modelo matemático obtenido con el que logramos
+    obtener una aproximación al valor de la masa de un electrón.
+   Con esto logramos cumplir con todos los objetivos de la práctica sin mayores
+   complicaciones y con resultados muy cercanos a los teóricos.
+
 * Bibliografía
 
 Paul.A.Tipler & Ralph A. Lewellyn. Modern Physics.W.H. Freeman Company. New Tork
