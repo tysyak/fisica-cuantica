@@ -1,0 +1,53 @@
+#+TITLE: Difracción de electrones
+#+LANGUAGE: es
+#+OPTIONS: title:nil toc:nil
+
+#+latex_compiler: xelatex
+#+LATEX_HEADER: \input{./main_config.tex}
+#+LATEX: \input{./../../template/portada.tex}
+#+latex_header: \input{/home/tysyak/org/conf.tex}
+
+* Objetivo
+Obtener la información necesaria que le permita elaborar un modelo matemático con el fin de:
+1. Verificar la hipótesis de D'Broglie
+2. Emplear la constante asociada con dicho modelo con el fin de determinar la masa
+   de un electrón.
+* Actividades
+1. Efectuar las lecturas necesarias que le permitan completar los datos de la siguiente tabla:
+   #+ATTR_LATEX: :align r|l
+   | \(V \times 10^{6} [\frac{m}{s}] \) | $\lambda \times 10^{-10} [m]$ |
+   |-------------------------------+--------------------|
+   | $0.700$                       | $9.900$            |
+   | $0.982$                       | $7.660$            |
+   | $1.270$                       | $5.720$            |
+   | $1.558$                       | $4.560$            |
+   | $1.840$                       | $4.050$            |
+
+2. Con base en la información consignada en el apartado anterior construya, con ayuda
+   de EXCEL, una gráfica que le permita predecir el comportamiento de las variables indicadas.
+3. Elija en tipo de dispersión adecuada que le permita conocer el modelo matemático para las
+   variables de interés en el Sistema Internacional de Unidades.
+
+   Se eligió la _dispersión potencial_.
+   [[./1.png]]
+
+4. A partir de la actividad anterior identifique la constante asociada con longitud de onda de
+   D'Broglie en el modelo matemático obtenido y utilícela para determinar el valor de la masa
+   del electrón.
+   \[ 7.198x^{-0.959} \]
+
+   Masa del electrón: $m = \frac{h}{\lambda}$
+   \[ m = \frac{6.626 \times 10^{-34}}{7.198 \times 10^{-4}} = 9.2053 \times 10^{-31} \]
+
+   - Error
+     \[ E\% = |\frac{9.109 \times 10^{-31}}{7.198 \times 10^{-4}}| \times 100 \]
+     \[ E\% = 1.050\% \]
+
+5. Elabore conclusiones a partir del cumplimiento de los objetivos planteados
+   para estas actividades calculando la exactitud o el error de exactitud
+   asociado con el experimento simulado.
+
+* Bibliografía
+
+Paul.A.Tipler & Ralph A. Lewellyn. Modern Physics.W.H. Freeman Company. New Tork
+Third Edition. 1999. /Un clásico de los libros de texto de física moderna/
