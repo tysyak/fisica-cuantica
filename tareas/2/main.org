@@ -1,0 +1,83 @@
+#+TITLE: El Efecto Fotoeléctrico
+#+LANGUAGE: es
+#+OPTIONS: title:nil toc:nil
+#+LATEX_HEADER: \input{./main_config.tex}
+#+LATEX: \input{./../../template/portada.tex}
+#+latex_header: \input{/home/tysyak/org/conf.tex}
+* Objetivos
++ Conocer los parámetros que identifican el estudio del Efecto
+  Fotoeléctrico.
++ Determinar la Constante de Planck, la Función de Trabajo y la
+  Frecuencia de Umbral de un metal seleccionado.
+* Actividades
++ Elabore una tabla donde aparezcan los valores de las variables
+   dependiente e independiente del experimento a simular.
+   #+caption: Elemento Sodio =Na=
+   #+ATTR_LATEX: :align r|l
+   | $\lambda[n\ m]$ | $[V]$ |
+   |-----------+-------|
+   |       200 |  -3.9 |
+   |       251 |  -2.6 |
+   |       301 |  -1.8 |
+   |       350 | -1.25 |
+   |       400 |  -0.8 |
+   |       450 |  -0.5 |
+   |       502 |  -0.2 |
+
+   #+caption: Tabla con notación
+   #+ATTR_LATEX: :align r|l
+   | $\lambda(\times10^{-7})$ | $[V]$ |
+   |---------------+-------|
+   |          5.02 |  -0.2 |
+   |           4.5 |  -0.5 |
+   |             4 |  -0.8 |
+   |           3.5 | -1.25 |
+   |          3.01 |  -1.8 |
+   |          2.51 |  -2.6 |
+   |             2 |  -3.9 |
+
+    #+caption: Haciendo las operaciones necesarias se tranforma a frecuencia y energía $C=3\times10^8$ y $e=-1.6\times10^{-19}[A\ s]$
+    #+ATTR_LATEX: :align r|l
+    | $f=\frac{c}{\lambda\times 10^{15}}[Hz]$ | $W=eV \times 10^{-19} [J]$ |
+    |------------------------------+-----------------------|
+    |                       0.5976 |                  0.32 |
+    |                       0.6666 |                   0.8 |
+    |                         0.75 |                  1.28 |
+    |                       0.8574 |                     2 |
+    |                       0.9966 |                  2.88 |
+    |                       1.1952 |                  4.16 |
+    |                          1.5 |                  6.24 |
+
++ Mediante  el  uso  de  Excel,  construir  una  gráfica  $W$  vs  $f$
+  (Energía  contra Frecuencia) y el modelo matemático que permita
+  identificar los valores de: La Constante de Planck, la Función de
+  Trabajo y la Frecuencia Umbral en las unidades correspondientes del
+  Sistema Internacional.
+
+  [[./1.png]]
+
++ Comparar los resultados obtenidos con los disponibles en la red para
+   el material seleccionado y validar la exactitud del experimento
+   simulado.
+
+   | Umbral Experimental | Umbral Real      | Error ($\%$) |
+   | $5.505\times 10^{14}$    | $5.505\times 10^{14}$ | 3.5901926 |
+
+   | Función de trabajo Experimental | Función de trabajo Real | Error ($\%$) |
+   | $3.5918\times 10^{19}$               | $3.78\times 10^{19}$         |  $4.978836$ |
+
+   | Constante de plank Experimental | Constante de plank Real | Error ($\%$) |
+   | $6.5245\times 10^{-34}$      | $6.626\times 10^{-34}$ |  $1.5318442$ |
+
++ Elabore sus conclusiones en función de los objetivos planteados.
+
+  Podemos concluir que conforme se desarrollaban los resultados, notamos la relación entre la energía
+  de los fotoelectrones con la frecuencia de luz, encontramos que el comportamiento lineal fotoelectrico
+  y de la misma pendiente se sacó el valor de la constante de plank.
+
++ Considere los valores siguientes de las constantes:
+  $C= 3 \times 10^{8}\frac{m}{s}$ velocidad de la luz y
+  $e= -1.6 \times 10^{-19} [A\ s]$ carga del electrón.
+
+* Referencias
+Primeros Datos del Efecto Fotoeléctrico. (n.d.). Online de:  http://hyperphysics.phy-astr.gsu.edu/hbasees/mod2.html
