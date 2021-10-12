@@ -1,0 +1,311 @@
+#+title: Serie 1
+#+AUTHOR: Cristian Romero Andrade, Chávez Magaña Manuel y Sánchez Bautista Alan Ulises
+#+options: toc:nil  num:nil title:nil
+#+latex_compiler: lualatex
+#+latex_class: scrartcl
+#+latex_header: \graphicspath{{./img} {../../template/img_common}}
+#+latex_header: \usepackage{chngcntr}
+#+latex_header: \counterwithin*{equation}{section}
+#+latex_header: \input{../../template/conf.tex}
+
+
+#+latex_header: \counterwithin*{equation}{subsection}
+
+
+#+begin_latex
+\begin{titlepage}
+  \centering
+    \includegraphics[width=0.25\textwidth]{unam_logo}\vspace{0.5cm}
+
+    {\scshape{\Huge Facultad de Ingeniería\par{}}}\vspace{0.25cm}
+
+    {\scshape{\Large Física Cuántica\par{}}}\vfill{}
+
+
+    {\huge \textbf{Serie 1}}\vfill{}
+
+
+    {\Large
+      Alumnos
+      \begin{itemize}
+        \item Chávez Magaña Manuel
+        \item Romero Andrade Cristian
+        \item Sánchez Bautista Alan Ulises
+      \end{itemize}
+    }\vfill{}
+
+      {\large Grupo: 01\par{}}\vfill{}
+
+    {\large Profesor\\Fis.~Salvador Enrique Villalobos Perez}\vfill{}
+    \vfil{}
+    {\large Semestre\\\textbf{2022--1}}
+    \vfill{}
+    {\large Fecha de Entrega\\14 de octubre de 2021}
+    \vfill{}
+    \includegraphics[width=0.1\textwidth]{inge_logo}
+
+\end{titlepage}
+
+\date{}
+\maketitle{}
+#+end_latex
+
+
+* 5 Emplear la Ley de Radiación de de Planck para obtener la Ley de Wein (análisis numérico)
+
+
+La ley de desplazamiento de Wien establece que el producto de la longitud de
+onda del  pico de emisión y la temperatura del cuerpo negro es equivalente a la
+constante
+#+label: eq:1.1
+\begin{equation}
+\lambda_{\text{pico}}*T = {2.898\times{}10}^{- 3}\lbrack mK\rbrack
+\end{equation}
+
+
+
+Partiendo de la Ley de Radiación de Planck con respecto a la unidad de volumen y
+la unidad de longitud de onda, tenemos:
+#+label: eq:1.2
+\begin{equation}
+q(\lambda,\ T) = \frac{C_{1}}{\lambda^{5}*\lbrack e^{\left(\frac{C_{2}}{\lambda*T} \right)} - 1\rbrack}
+\end{equation}
+
+Donde \(C_{1}\) es la primera constante de radiación, \(C_{2}\) la
+segunda constante de radiación \lambda longitud de onda y $T$ la temperatura del
+cuerpo negro, tenemos que ordenando la ecuación [[eq:1.2][2]]:
+
+#+label: eq:1.2
+\begin{equation}
+q(\lambda,\ T) = \frac{C_{1}{*\lambda}^{- 5}}{\lbrack e^{\left( \frac{C_{2}}{\lambda*T} \right)} - 1\rbrack}
+\end{equation}
+
+Derivando [[eq:1.2][3]], tenemos que:
+#+label: eq:1.4
+\begin{equation}
+\frac{\partial(q(\lambda,\ T))}{\partial\lambda} = \frac{{- 5C}_{1}\lambda^{- 6}\left\lbrack e^{\left( \frac{C_{2}}{\lambda*T} \right)} - 1 \right\rbrack - \ C_{1}\lambda^{- 5}\left( \frac{{- C}_{2}\lambda^{- 2}}{T} \right)e^{\left( \frac{C_{2}}{\text{\lambda T}} \right)}}{\lbrack e^{\left( \frac{C_{2}}{\lambda*T} \right)} - 1\rbrack}
+\end{equation}
+
+Simplificando la ecuación [[eq:1.4][4]]:
+#+label: eq:1.5
+\begin{equation}
+\frac{\partial(q(\lambda,\ T))}{\partial\lambda} = \frac{C_{1}\lambda^{- 6}e^{\left( \frac{C_{2}}{\text{\lambda T}} \right)}\left\lbrack {- 5(1 - e}^{- \left( \frac{C_{2}}{\text{\lambda T}} \right)}) + \frac{C_{2}}{\text{\lambda T}} \right\rbrack}{{\lbrack e^{\left( \frac{C_{2}}{\lambda*T} \right)} - 1\rbrack}^{2}}
+\end{equation}
+
+Igualando a $0$ la ecuación por máximos:
+#+label: eq:1.6
+\begin{equation}
+\frac{\partial\left( q(\lambda,\ T) \right)}{\partial\lambda} = 0
+\end{equation}
+
+#+label: eq:1.7
+\begin{equation}
+\frac{C_{1}\lambda^{- 6}e^{\left( \frac{C_{2}}{\text{\lambda T}} \right)}\left\lbrack {- 5(1 - e}^{- \left( \frac{C_{2}}{\text{\lambda T}} \right)}) + \frac{C_{2}}{\text{\lambda T}} \right\rbrack}{{\lbrack e^{\left( \frac{C_{2}}{\lambda*T} \right)} - 1\rbrack}^{2}} = 0
+\end{equation}
+
+Simplificando [[eq:1.7][7]]:
+
+\begin{equation}
+{- 5(1 - e}^{- \left( \frac{C_{2}}{\text{\lambda T}} \right)}) + \frac{C_{2}}{\text{\lambda T}} = 0
+\end{equation}
+
+Igualando \(\left( \frac{C_{2}}{\text{\lambda T}} \right)\) a una variable ``$x$''
+
+\begin{equation}
+x = \left( \frac{C_{2}}{\text{\lambda T}} \right)
+\end{equation}
+
+\begin{equation}
+{- 5(1 - e}^{- x}) + x = 0
+\end{equation}
+
+Despejando:
+
+\begin{equation}
+\left( \frac{x}{{1 - e}^{- x}} \right) - 5 = 0
+\end{equation}
+
+Debido a que si $\lim_{x \to +\infty} e^{x} = 0$, por lo que
+se opta por usar $5$, con lo que
+
+\begin{equation}
+x = 5\left( 1 - e^{- 5} \right) = 4.965114232\ldots
+\end{equation}
+
+Tenemos que la constante de desplazamiento de Wein, es igual a:
+
+\begin{equation}
+b = \lambda_{\text{pico}}*T = \frac{C_{2}}{x}
+\end{equation}
+
+Obteniendo \(C_{2}:\)
+
+\begin{equation}
+C_{2} = \left( \frac{h*c_{0}}{k_{B}} \right) = (1 - 4385 \times 10^{-2})mK = (1.4385 \times 10^7)\text{\eta{}mK}
+\end{equation}
+
+Donde:
+
+- $h$ es la constante de Planck
+
+- \(c_{0}\) es la velocidad de la luz al vacío
+
+- \(k_{B}\) es la constante de Boltzman
+
+Sustituyendo \(C_{2}\) y x en la ecuación anterior
+
+\begin{equation}
+b = \frac{C_{2}}{x} = \frac{1.4385E4}{4.9651142317} \cong 2897.6\ \mu{}mK
+\end{equation}
+
+* 6 Emplear la Ley de Radiación de Planck para obtener la Ley de Stefan y Boltzmann (integrar)
+
+La ley de Stefan y Boltzmann establece que la energía radiada por un
+radiador de cuerpo negro por segundo, por unidad de superficie, es
+proporcional a la cuarta potencia de la temperatura absoluta y está dada
+por
+
+\begin{equation}
+\frac{P}{A} = \sigma T^{4}\frac{j}{m^{2}s}
+\end{equation}
+
+Donde \(\sigma\) es igual a:
+
+\begin{equation}
+\sigma = {5.6703\times{}10}^{- 8}\frac{\text{vatios}}{m^{2}K^{4}}
+\end{equation}
+
+Para objetos calientes distintos de los radiadores ideales, la ley se
+expresa de la siguiente forma
+
+\begin{equation}
+\frac{P}{A} = e\sigma T^{4}
+\end{equation}
+
+La potencia total por unidad de área de la radiación de un cuerpo negro,
+se puede obtener integrando la fórmula de radiación de Planck sobre
+todas las longitudes de onda. La potencia irradiada por unidad de área
+como función de la longitud de onda es
+
+\begin{equation}
+\frac{dP}{d\lambda}\frac{1}{A} = \frac{2\pi hc^{2}}{\lambda^{5}\left( e^{\text{hcl}\lambda\text{kT}} - 1 \right)}
+\end{equation}
+
+De modo que tomando la integral:
+
+\begin{equation}
+\frac{P}{A} = 2\pi hc^{2}\int_{0}^{\infty}\frac{d\lambda}{\lambda^{5}\left( e^{\text{hcl\lambda kT}} - 1 \right)}
+\end{equation}
+
+Tomando una variable $x$ y realizando la sustitución a:
+
+\begin{equation}
+x = \frac{\text{hc}}{\text{\lambda kT}}
+\end{equation}
+
+Obtenemos la derivada
+
+\begin{equation}
+dx = - \frac{\text{hc}}{\lambda^{2}\text{kT}}d\lambda
+\end{equation}
+
+Sustituimos por $x$ en la ecuación anterior
+
+\begin{equation}
+\frac{P}{A} = \frac{2\pi{(kT)}^{2}}{h^{3}c^{2}}\int_{0}^{\infty}{\frac{x^{3}}{\left( e^{x} - 1 \right)}\text{dx}}
+\end{equation}
+
+Usando la fórmula de la integral estándar
+
+\begin{equation}
+\int_{0}^{\infty}{\frac{x^{3}}{\left( e^{x} - 1 \right)}\text{dx}} = \frac{\pi^{4}}{15}
+\end{equation}
+
+Nos da como resultado la fórmula final de la Ley de Stefan-Boltzmann
+
+\begin{equation}
+\frac{P}{A} = \frac{2\pi^{5}k^{4}}{{15h}^{3}c^{2}}T^{4} = \sigma T^{4} = \left\lbrack {5.670\times{}10}^{- 8}\frac{\text{vatios}}{m^{2}K^{4}} \right\rbrack T^{4}
+\end{equation}
+
+* 7 Encuentra la Función de Trabajo del Sodio sabiendo que su Frecuencia Umbral es* \({4.39\times{}10}^{14} [H]\)
+
+\begin{equation}
+y = mx + b
+\end{equation}
+
+\begin{equation}
+W = {6.63\times{}10}^{- 34}f + \phi
+\end{equation}
+
+\begin{equation}
+si\ f = {4.39\times{}10}^{14} \rightarrow W = 0
+\end{equation}
+
+\begin{equation}
+así\ \phi = - {6.63\times{}10}^{- 34}*\ {4.39\times{}10}^{14} = {- 2.91\times{}10}^{- 19}\lbrack J\rbrack = - 1.81875\lbrack eV\rbrack\
+\end{equation}
+
+* 8 Encuentra la Frecuencia Umbral del Litio sabiendo que su Función de Trabajo es* \({4.69\times{}10}^{- 19}\) Joules
+
+\begin{equation}
+W = {6.63\times{}10}^{- 34} - f = {4.69\times{}10}^{- 19} = 0
+\end{equation}
+
+\begin{equation}
+f = \frac{{4.69\times{}10}^{- 19}}{{6.63\times{}10}^{- 34}} = {7.074\times{}10}^{14}\lbrack Hz\rbrack
+\end{equation}
+
+* 9 Con base en las Ecuaciones de Maxwell en el vacío, sin considerar
+fuente alguna de los campos; encuentre la Ecuación de Onda
+correspondiente al Campo Magnético.
+
+La ecuación de onda de una onda de propagación eléctrica plana en la
+dirección x en el espacio es:
+
+\begin{equation}
+\frac{\partial^{2}E}{{\partial x}^{2}} = \frac{1}{c^{2}}\frac{\partial^{2}E}{{\partial t}^{2}}
+\end{equation}
+
+La ecuación de onda electromagnética se deriva de las ecuaciones de
+Maxwell. Las ecuaciones de Maxwell contienen la ecuación de onda de las
+ondas electromagnéticas. Se toma el rotacional de la ley de Faraday.
+
+\begin{equation}
+\nabla \times (\nabla \times E) = - \frac{\partial(\nabla \times B)}{\partial t}
+\end{equation}
+
+Se sustituye por la Ley de Ampere para una región de carga sin
+corriente.
+
+\begin{equation}
+\nabla \times (\nabla \times E) = - \frac{1}{c^{2}}\frac{\partial^{2}E}{{\partial t}^{2}}
+\end{equation}
+
+Esto es una ecuación de onda tridimensional en forma vectorial. Como es
+difícil visualizarlo de esta forma, resulta más familiar cuando se
+reduce a una onda plana con el campo en la dirección x solamente.
+
+\begin{equation}
+\frac{\partial^{2}E_{x}}{{\partial y}^{2}} + \frac{\partial^{2}E_{x}}{{\partial z}^{2}} = \frac{1}{c^{2}}\frac{\partial^{2}E_{x}}{{\partial t}^{2}}
+\end{equation}
+
+Puesto que el campo eléctrico está solamente en la dirección x, la
+propagación es perpendicular al eje x y puede tomar cualquier dirección
+en el plano $yz$, dependiendo de los valores de las derivadas. Esta
+ecuación es la forma general de la ecuación de onda bidimensional.
+
+* 10 Determine la longitud de onda de un haz de protones que se emite, desde una fuente, con una energía de $1 MeV$. ( $mp = 1.673 \times 10^{-27} Kg$)
+
+\begin{equation}
+\lambda = \frac{h}{\text{mv}}\text{\ donde}
+\end{equation}
+
+\begin{equation}
+v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{2({1 \times 10}^{6})({1.6\times{}10}^{- 19})}{{1.673\times{}10}^{- 27}}} = {1.383\times{}10}^{7}
+\end{equation}
+
+\begin{equation}
+\lambda = \frac{{6.63\times{}10}^{- 34}}{{1.673\times{}10}^{- 27}*\ {1.383\times{}10}^{7}} = {2.865\times{}10}^{- 14}\lbrack m\rbrack
+\end{equation}
+
+* *Referencias*
