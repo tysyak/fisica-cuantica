@@ -1,6 +1,6 @@
 #+title: Serie 1
 #+AUTHOR: Cristian Romero Andrade, Chávez Magaña Manuel y Sánchez Bautista Alan Ulises
-#+options: toc:nil  num:nil title:nil
+#+options: toc:nil num:nil title:nil
 #+latex_compiler: lualatex
 #+latex_class: scrartcl
 #+latex_header: \graphicspath{{./img} {../../template/img_common}}
@@ -9,10 +9,6 @@
 #+latex_header: \input{../../template/conf.tex}
 
 
-#+latex_header: \counterwithin*{equation}{subsection}
-
-
-#+begin_latex
 \begin{titlepage}
   \centering
     \includegraphics[width=0.25\textwidth]{unam_logo}\vspace{0.5cm}
@@ -43,15 +39,20 @@
     {\large Fecha de Entrega\\14 de octubre de 2021}
     \vfill{}
     \includegraphics[width=0.1\textwidth]{inge_logo}
-
 \end{titlepage}
 
 \date{}
 \maketitle{}
-#+end_latex
 
 
-* 5 Emplear la Ley de Radiación de de Planck para obtener la Ley de Wein (análisis numérico)
+
+
+#+latex_header: \counterwithin*{equation}{subsection}
+
+
+
+
+* 5 Emplear la Ley de Radiación de Planck para obtener la Ley de Wein (análisis numérico)
 
 
 La ley de desplazamiento de Wien establece que el producto de la longitud de
@@ -132,13 +133,13 @@ se opta por usar $5$, con lo que
 x = 5\left( 1 - e^{- 5} \right) = 4.965114232\ldots
 \end{equation}
 
-Tenemos que la constante de desplazamiento de Wein, es igual a:
+Tenemos que la constante de desplazamiento de Wein,:
 
 \begin{equation}
 b = \lambda_{\text{pico}}*T = \frac{C_{2}}{x}
 \end{equation}
 
-Obteniendo \(C_{2}:\)
+Calculando \(C_{2}:\)
 
 \begin{equation}
 C_{2} = \left( \frac{h*c_{0}}{k_{B}} \right) = (1 - 4385 \times 10^{-2})mK = (1.4385 \times 10^7)\text{\eta{}mK}
@@ -160,33 +161,26 @@ b = \frac{C_{2}}{x} = \frac{1.4385E4}{4.9651142317} \cong 2897.6\ \mu{}mK
 
 * 6 Emplear la Ley de Radiación de Planck para obtener la Ley de Stefan y Boltzmann (integrar)
 
-La ley de Stefan y Boltzmann establece que la energía radiada por un
-radiador de cuerpo negro por segundo, por unidad de superficie, es
-proporcional a la cuarta potencia de la temperatura absoluta y está dada
-por
 
+La ley de Stefan y Boltzmann dice que la energía irradiada por un radiador de cuerpo negro por segundo por unidad de área es proporcional a la cuarta potencia de la temperatura absoluta:
 \begin{equation}
 \frac{P}{A} = \sigma T^{4}\frac{j}{m^{2}s}
 \end{equation}
 
-Donde \(\sigma\) es igual a:
+Calculamos \(\sigma\):
 
 \begin{equation}
-\sigma = {5.6703\times{}10}^{- 8}\frac{\text{vatios}}{m^{2}K^{4}}
+\sigma = {5.6703\times{}10}^{- 8}\frac{\text{W}}{m^{2}K^{4}}
 \end{equation}
 
-Para objetos calientes distintos de los radiadores ideales, la ley se
-expresa de la siguiente forma
+Para objetos calientes que no sean radiadores ideales, la ley es la
+siguiente:
 
 \begin{equation}
 \frac{P}{A} = e\sigma T^{4}
 \end{equation}
 
-La potencia total por unidad de área de la radiación de un cuerpo negro,
-se puede obtener integrando la fórmula de radiación de Planck sobre
-todas las longitudes de onda. La potencia irradiada por unidad de área
-como función de la longitud de onda es
-
+La potencia de radiación total del cuerpo negro por unidad de área se puede obtener integrando el patrón de radiación de Planck en todas las longitudes de onda. La potencia de radiación por unidad de área en función de la longitud de onda es:
 \begin{equation}
 \frac{dP}{d\lambda}\frac{1}{A} = \frac{2\pi hc^{2}}{\lambda^{5}\left( e^{\text{hcl}\lambda\text{kT}} - 1 \right)}
 \end{equation}
@@ -224,7 +218,7 @@ Usando la fórmula de la integral estándar
 Nos da como resultado la fórmula final de la Ley de Stefan-Boltzmann
 
 \begin{equation}
-\frac{P}{A} = \frac{2\pi^{5}k^{4}}{{15h}^{3}c^{2}}T^{4} = \sigma T^{4} = \left\lbrack {5.670\times{}10}^{- 8}\frac{\text{vatios}}{m^{2}K^{4}} \right\rbrack T^{4}
+\frac{P}{A} = \frac{2\pi^{5}k^{4}}{{15h}^{3}c^{2}}T^{4} = \sigma T^{4} = \left\lbrack {5.670\times{}10}^{- 8}\frac{\text{W}}{m^{2}K^{4}} \right\rbrack T^{4}
 \end{equation}
 
 * 7 Encuentra la Función de Trabajo del Sodio sabiendo que su Frecuencia Umbral es* \({4.39\times{}10}^{14} [H]\)
@@ -297,8 +291,10 @@ ecuación es la forma general de la ecuación de onda bidimensional.
 * 10 Determine la longitud de onda de un haz de protones que se emite, desde una fuente, con una energía de $1 MeV$. ( $mp = 1.673 \times 10^{-27} Kg$)
 
 \begin{equation}
-\lambda = \frac{h}{\text{mv}}\text{\ donde}
+\lambda = \frac{h}{\text{mv}}
 \end{equation}
+
+donde:
 
 \begin{equation}
 v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{2({1 \times 10}^{6})({1.6\times{}10}^{- 19})}{{1.673\times{}10}^{- 27}}} = {1.383\times{}10}^{7}
@@ -307,5 +303,3 @@ v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{2({1 \times 10}^{6})({1.6\times{}10}^{- 19
 \begin{equation}
 \lambda = \frac{{6.63\times{}10}^{- 34}}{{1.673\times{}10}^{- 27}*\ {1.383\times{}10}^{7}} = {2.865\times{}10}^{- 14}\lbrack m\rbrack
 \end{equation}
-
-* *Referencias*
